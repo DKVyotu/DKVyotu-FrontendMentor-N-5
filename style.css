@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.atribucion {
+    font-size: 12px;
+    & :hover {
+        font-weight: 600;
+        color: hsl(158, 36%, 37%);
+    }
+}
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.card {
+    width: fit-content;
+    max-width: 600px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+
+    display: flex;
+}
+.imagenEscritorio {
+    max-width: 300px;
+    border-radius: 10px  0px  0px  10px;
+}
+.imagenMobil {
+    display: none;
+}
+
+.contenido {
+    padding: 32px; 
+
+    & .categoria  {
+        color: hsl(228, 12%, 48%);  
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 5px;
+        padding-bottom: 20px;
+    }
+    
+    & .nombre {
+        color: hsl(212, 21%, 14%);
+        font-family: "Fraunces", serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        padding-bottom: 24px;
+    }
+
+    & .descripcion {
+        color: hsl(228, 12%, 48%);  
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 164.286%; 
+        padding-bottom: 29px;
+    }
+    
+    & .precios {
+        display: flex;
+        align-items: center;
+        padding-bottom: 30px;
+
+        & .precioAnterior {
+            color: hsl(228, 12%, 48%);
+            font-family: "Montserrat", sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23px; /* 176.923% */
+            text-decoration-line: line-through;
+        }
+
+        & .precioActual {
+            color: hsl(158, 36%, 37%);
+            font-family: "Fraunces", serif;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px; /* 100% */
+            padding-right: 19px;
+        }
+        
+    }
+
+    & button {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(158, 36%, 37%);
+
+        border: none;
+        border-radius: 8px;
+
+        /* texto */        
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        
+        display: inline-flex;
+        justify-content: center;
+        align-items: flex-start;
+        
+        & svg {
+            margin-right: 10px;
+            width: 14.385px;
+            height: 16px;
+        }
+        &:hover {
+            background-color: #1A4032;
+        }
+        
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        transition: all 1s ;
+        margin: 16px;
+        padding: 0;
+        flex-direction: column;
+    }
+    
+    .imagenEscritorio {
+        display: none;
+    }
+    .imagenMobil { 
+        transition: all 1s ;
+        border-radius: 10px 10px 0px 0px;
+        max-width: 100%;
+        display: block;
+    }
+    .contenido {
+        padding: 24px;
+
+        & .categoria {
+            padding-bottom: 12px;
+        }
+        & .nombre {
+            padding-bottom: 16px;
+        }
+        & .descripcion {
+            padding-bottom: 24px;
+        }
+        & .precios {
+            padding-bottom: 20px;
+        }
+    }
+}
