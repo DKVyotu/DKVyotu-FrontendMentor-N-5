@@ -13,7 +13,7 @@ Esta es una solución al [desafío del componente Card Responsive en Frontend Me
 
 ### Enlaces
 
-- URL de la solución: [Enlace](https://dkvyotu.github.io/DKVyotu-FrontendMentor-N-5/)
+- URL de la solución: [Enlace](https://dkvyotu.github.io/FrontendMentor-N-5/)
 
 ### Construido con
 
