@@ -1,6 +1,6 @@
 # Frontend Mentor: solución de Card Responsive
 
-Esta es una solución al [desafío del componente Card Responsive en Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm).
+Esta es una solución al [desafío del componente Card Responsive en Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa).
 
 ### Desktop
 
@@ -13,7 +13,7 @@ Esta es una solución al [desafío del componente Card Responsive en Frontend Me
 
 ### Enlaces
 
-- URL de la solución: [Enlace](https://dkvyotu.github.io/FrontendMentor-N-5/)
+- URL de la solución: [Enlace](https://dkvyotu.github.io/DKVyotu-FrontendMentor-N-5/)
 
 ### Construido con
 
